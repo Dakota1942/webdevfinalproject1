@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    float: left;
+    padding: 0% 0% 2% 0%;
+    margin: 0pt;
+    width: 100%;
+    top: 0pt;
+    left: 0pt;
+    right: 0pt;
+    z-index: 999;
+}
+
+.navbar #c {
+    display: inline-block;
+    list-style: none;
+    width: 5%;
+    text-align: center;
+    padding: 0% 1% 0% 1%;
+    z-index: 999;
+}
+
+.img-container img {
+    height: 10cm;
+    width: 15cm;
+    margin-left: 31.5%;
+    margin-top: 10%;
+}
+
+#left, #right {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: 5cm;
+  height: 5cm;
+  padding: 10% 5% 0% 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}

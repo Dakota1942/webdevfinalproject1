@@ -1,0 +1,67 @@
+<!-- Photo Gallery -->
+<!DOCTYPE html>
+
+<head>
+    <title> Photo Gallery </title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"> </script>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<html lang="en">
+    <div class="navbar">
+        <ul>
+            <li id="c"> <a href="index.html"> Home </a> </li>
+        </ul>
+    </div>
+    <div class="gallery"> 
+        <div class="img-container">
+            <img src="img/photo1.webp" alt="" id="1">
+        </div>
+
+        <div class="img-container">
+            <img src="img/photo2.webp" alt="" id="2">
+        </div>
+
+        <div class="img-container">
+            <img src="img/photo3.jpg" alt="" id="3">
+        </div>
+
+        <div class="img-container">
+            <img src="img/photo4.webp" alt="" id="4">
+        </div>
+
+        <div class="img-container">
+            <img src="img/photo5.jpg" alt="" id="5">
+        </div>
+
+        <p onclick="plusSlides(-1)"> <img src="img/left-arrow-icon.png" id="left" alt=""> </p>
+        <p onclick="plusSlides(1)"> <img src="img/right-arrow-icon.png" id="right" alt=""> </p>
+
+        <script>
+            let index = 1;
+            showSlides(index);
+
+            
+            function plusSlides(n) {
+                showSlides(index+=n);
+            }
+
+            function showSlides(n) {
+                let slides = document.getElementsByClassName('img-container');
+                let i;
+                if(n > slides.length) {
+                   index = 1;
+                }
+                if(n < 1) {
+                    index = slides.length;
+                }
+                for(i=0; i<slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[index-1].style.display = "block";
+            }
+        </script>
+    </div>
+</html>

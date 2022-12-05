@@ -1,0 +1,18 @@
+html {
+    padding: 3%;
+}
+
+body {
+    position: relative;
+    padding: 3%;
+}
+
+.signup {
+    position: fixed;
+    width: 25%;
+    height: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: solid black 2px;
+    padding: 2%;
+}
