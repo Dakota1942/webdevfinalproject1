@@ -1,0 +1,109 @@
+html {
+    background-color: silver;
+}
+
+.navbar {
+    position: fixed;
+    top: 0pt;
+    left: 0pt;
+    right: 0pt;
+    z-index: 999;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    width: 5%;
+    text-align: center;
+    padding: 0% 1% 0% 1%;
+    z-index: 999;
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:hsla(0, 0%, 40%, .9);
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2cm;
+    padding: 3.5% 0% 0% 37%;
+}
+
+h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    margin-left: 16cm;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 0% 0% 0% 0%;
+}
+
+img {
+    width: 6cm;
+    height: 6cm;
+}
+
+.m1, .m2, .m3,.m4 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: large;
+}
+
+.nick, .simon, .john, .roger {
+    height: 6cm;
+    width: 6cm;
+    border: hsla(0, 0%, 20%, .9) solid 2px;
+    background-color: hsla(0, 0%, 50%, .9);
+}
+
+.nick p, .simon p, .john p, .roger p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: hsla(0, 0%, 20%, .9);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.nick {
+    position: fixed;
+    top: 36.5%;
+    left: 5.25%;
+    margin-top: .5%;
+}
+
+.simon {
+    position: fixed;
+    top: 36.5%;
+    margin-top: .5%;
+    left: 30%;
+}
+
+.john {
+    position: fixed;
+    top: 36.5%;
+    margin-top: .5%;
+    left: 55%;
+}
+
+.roger {
+    position: fixed;
+    top: 36.5%;
+    margin-top: .5%;
+    left: 79.75%;
+}

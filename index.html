@@ -1,83 +1,26 @@
-<!DOCTYPE html>
-
-<html lang="en">
+<html>
     <head>
-        <title> Duran Duran </title>
+        <title> Cover Page </title>
         <meta charset="utf-8">
         <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"> </script>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://www.cssfontstack.com/Courier-New">
-
-        
-        <script>
-            $(document).ready(function(){
-                $('.itemA').hide();
-                $('.itemO').hide();
-            });
-        </script>
+        <link rel="stylesheet" href="css/index.css">
     </head>
-
     <body>
-        <!-- Navbar section -->
-        <div class="navbar" id="navbar">
-            <ul class="navbar-nav">
-                <li id="c"> <a href="index.html"> Home </a> </li>
-                <li id="c"> <a id="album"> Albums </a> </li>
-                <li id="c"> <a id="other"> Other </a> </li>
-                <ul class="album-dropdown" id="album-dropdown">
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_lFeR_Em7P-11GcwpW88evYUjR7raaMYAY"> Duran Duran </a> </li>
-					<li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_lWqVo7JemhTn_Whr5cXidsmYvGuv_VTnQ"> Rio </a> </li>
-					<li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_mQWNasy8x8CCAoiPqbojKDVa3SdNP0HPE"> Seven and the Ragged Tiger </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_ncdUODlVH6cly92KHJ7L8-PFRDID2SJTU"> Notorious </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_lu8YaDcfahEDfZc8aP0QcMuhrfNFoezoE"> Big Thing </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_nPu2qZRT2qXRh-rWFXBlUhQ2Mryej1O2w"> Liberty </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_ljjNv7D_JlR_Hw9HPwHyvK0O5mh4sKB3g"> The Wedding Album </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_m3lCCnT09vi7Zj52HQVWhROZpjGyDNMHI"> Thank You </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_nD9txEL2nnh5cf07VBzZBPR6vO9gjG2p4"> Medazzaland </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_k8JEcfGX8u8-vz-SRjHBSWeWx5MzZJPnY"> Pop Trash </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_kpJrsspJFMlu2XcsXoT9iVu8CD7gmg1hk"> Astronaut </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_m5DSiSYXPcDe6M02P9hUZJx5laLRIMpKQ"> Red Carpet Massacre </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_nDOHLgoRy4ZQLlz4F1xXuaIFxWjyDxbME"> All You Need Is Now </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_kWWF-iIKQT35MAasBc7-xq6SaX8B-virI"> Paper Gods </a> </li>
-                    <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_mM1nGhGCys1ecja-yqcdmpUVnAtWFFNHY"> Future Past </a> </li>
-                </ul>
-                <ul class="other-dropdown" id="other-dropdown">
-                    <li class="itemO"> <a href="tickets.html"> Concert Tickets </a> </li>
-                    <li class="itemO"> <a href="photos.html"> Photo Gallery </a> </li>
-                </ul>
+        <div class="navbar">
+            <ul>
+                <li> <a href="home.html"> Home </a> </li>
             </ul>
-            
-            <script>
-                $('#album').mouseover(function(){
-                    $('.itemA').show();
-                });
-                $('#album').mouseout(function(){
-                   $('.itemA').hide();
-                });
-                $('.itemA').mouseover(function(){
-                    $('.itemA').show();
-                });
-                $('.itemA').mouseout(function(){
-                    $('.itemA').hide();
-                });
-
-                $('#other').mouseover(function(){
-                    $('.itemO').show();
-                });
-                $('#other').mouseout(function(){
-                    $('.itemO').hide();
-                });
-                $('.itemO').mouseover(function(){
-                    $('.itemO').show();
-                });
-                $('.itemO').mouseout(function(){
-                    $('.itemO').hide();
-                });
-            </script>
         </div>
-        <div class="info">
-            <img src="img/duranduran.jpg" alt="">
+        <div class="main"> 
+            <h1> Duran Duran Website </h1>
+            <p> By: Dakota Jones </p>
+            <address> <a href="mailto:dakotaej@usca.edu"> Email </a> </address>
+
+            <p> This project is a website created for the band Duran Duran. 
+                It includes a main page, introduction page, calendar page, 
+                and a concert ticket page.
+            </p>
         </div>
     </body>
 </html>

@@ -35,26 +35,15 @@ a:hover {
     color:hsla(0, 0%, 40%, .9);
 }
 
-h1 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1cm;
-    padding: 3.5% 0% 0% 37%;
-}
-
-h2 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: .5cm;
-    padding: 1% 0% 0% 35%;
-}
-
-.signup {
+.main {
     position: fixed;
-    width: 25%;
-    height: 25%;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 10cm;
+    height: 8cm;
+    padding: 15% 0% 0% 35%;
     text-align: center;
-    border: solid black 2px;
-    padding: 2%;
-    margin-left: 13cm;
-    margin-top: 1.5cm;
+}
+
+.main p {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
