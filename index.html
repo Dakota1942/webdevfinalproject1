@@ -5,9 +5,87 @@
         <meta charset="utf-8">
         <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"> </script>
-        <link rel="stylesheet" href="css/main.css">
-        
+        <!--<link rel="stylesheet" href="css/main.css">-->
+        <style>
+html {
+    background-color:blanchedalmond;
+}
 
+body {
+    padding: 3%;
+}
+
+.navbar {
+    position: fixed;
+    float: left;
+    padding: 0% 0% 2% 0%;
+    margin: 0pt;
+    width: 100%;
+    top: 0pt;
+    left: 0pt;
+    right: 0pt;
+    z-index: 999;
+}
+
+.navbar #c {
+    display: inline-block;
+    list-style: none;
+    width: 5%;
+    text-align: center;
+    padding: 0% 1% 0% 1%;
+    z-index: 999;
+}
+
+#album-dropdown li {
+    list-style: disc;
+    padding-right: 35cm;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#album-dropdown a {
+    position: fixed;
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+#other-dropdown li {
+    list-style: disc;
+    padding-right: 28cm;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#other-dropdown a {
+    position: fixed;
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.info {
+    position: fixed;
+    width: 10cm;
+    height: 10cm;
+    right: 0%;
+    top: 15%;
+    padding: 3%;
+    background-color: darkslategrey;
+}
+
+.info h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(darkcyan, cadetblue, darkcyan);
+}
+.info img{
+    display: block;
+    width: 10cm;
+    height: 10cm;
+    margin: auto;
+}
+
+</style>
         <script>
             $(document).ready(function(){
                 $('.itemA').hide();
