@@ -17,7 +17,7 @@ var firebaseConfig = {
   });
   
   // save the data
-  $("input[type='button']").click(function(e) {
+  $("#submit").click(function(e) {
     e.preventDefault();
   
     // get the value of the form using serializeArray method
