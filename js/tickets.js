@@ -7,11 +7,12 @@ var firebaseConfig = {
     appId: "1:595803691521:web:176326dd26ed3a0cbafe00",
     measurementId: "G-CD49NSYZET"
   };
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
   // save the data
-  $("input[type='submit']").click(function(e) {
+  $(".reservation input[type='submit']").click(function(e) {
     e.preventDefault();
   
     // get the value of the form using serializeArray method
