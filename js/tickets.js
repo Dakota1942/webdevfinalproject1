@@ -23,17 +23,15 @@ var firebaseConfig = {
       console.log(entry);
       data[entry.name]=entry.value;
     });
-    firebase.firestore().collection("seatNums").add({
-        data,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    });
+    firebase.firestore().collection("seatNums").add(data);
     /* clear the entry */
     $('form')[0].reset();
   });
   
-  firebase.firestore().collection('seatNums').orderBy("timestamp", "desc").limit(1).onSnapshot(function(querySnapshot) {
-    querySnapshot.forEach(function(doc){
+  firebase.firestore().collection('seatNums').onSnapshot(function(querySnapshot) {
+    //querySnapshot.forEach(function(doc){
       var s = doc.data().seatoptions;
-      $('#reserved').text('Your seat ' + s + " has been reserved.")
-    });
+      $('#reserved').text('Your seat ' + s + " has been reserved.");
+      $('#reserved').text('');
+    //});
   });
