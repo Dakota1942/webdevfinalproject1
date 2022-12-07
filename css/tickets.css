@@ -59,7 +59,7 @@ h2 {
     margin-top: 1.5cm;
 }
 
-input[type="button"], input[type="submit"] {
+#clear, #submit {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
