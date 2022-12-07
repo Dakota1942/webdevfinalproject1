@@ -11,7 +11,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   
   // save the data
-  $(".reservation input[type='submit']").click(function(e) {
+  $("input[type='submit']").click(function(e) {
     e.preventDefault();
   
     // get the value of the form using serializeArray method
@@ -19,24 +19,26 @@ var firebaseConfig = {
   
     var data = {};
     inputData.forEach((entry)=>{
-      console.log(entry);
+      //console.log(entry);
       data[entry.name]=entry.value;
     });
-    console.log(data);
+    //console.log(data);
     firebase.firestore().collection("seatNums").add(data);
     /* clear the entry */
     $('form')[0].reset();
   });
   
   firebase
-    .firestore()
-    .collection('seatNums')
-    .onSnapshot((querySnapshot) => {
-      console.log(querySnapshot.size);
-      querySnapshot.forEach((doc) => {
-        console.log(doc.data());
-        //console.log(doc.data().choice);
-        //console.log(doc.data().comm);
-      });
+  .firestore()
+  .collection('seatNums')
+  .onSnapshot((querySnapshot) => {
+    console.log(querySnapshot.size);
+    querySnapshot.forEach((doc) => {
+      console.log(doc.data());
+      console.log(doc.data().fname);
+      console.log(doc.data().email);
+      console.log(doc.data().seatoptions);
     });
+  });
+
   
