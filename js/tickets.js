@@ -29,9 +29,9 @@ var firebaseConfig = {
   });
   
   firebase.firestore().collection('seatNums').onSnapshot(function(querySnapshot) {
-    //querySnapshot.forEach(function(doc){
+    querySnapshot.forEach(function(doc){
       var s = doc.data().seatoptions;
       $('#reserved').text('Your seat ' + s + " has been reserved.");
       $('#reserved').text('');
-    //});
+    });
   });
