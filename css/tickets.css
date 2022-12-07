@@ -50,11 +50,17 @@ h2 {
 .signup {
     position: fixed;
     width: 25%;
-    height: 25%;
+    height: 30%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border: solid black 2px;
     padding: 2%;
     margin-left: 13cm;
     margin-top: 1.5cm;
+}
+
+input[type="button"] {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
 }
