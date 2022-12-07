@@ -10,6 +10,11 @@ var firebaseConfig = {
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  $('#clear').click(function() {
+    $('form')[0].reset();
+    $('#reserved').text('')
+  });
   
   // save the data
   $("input[type='button']").click(function(e) {
@@ -32,6 +37,5 @@ var firebaseConfig = {
     querySnapshot.forEach(function(doc){
       var s = doc.data().seatoptions;
       $('#reserved').text('Your seat ' + s + " has been reserved.");
-      $('#reserved').text('');
     });
   });
