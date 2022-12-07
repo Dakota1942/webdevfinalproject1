@@ -13,7 +13,7 @@ var firebaseConfig = {
 
   $('#clear').click(function() {
     $('form')[0].reset();
-    $('#reserved').text('')
+    $('#reserved').text(' ')
   });
   
   // save the data
