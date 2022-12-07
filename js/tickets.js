@@ -11,7 +11,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   
   // save the data
-  $(".signup input[type='submit']").click(function(e) {
+  $(".reservation input[type='submit']").click(function(e) {
     e.preventDefault();
   
     // get the value of the form using serializeArray method
